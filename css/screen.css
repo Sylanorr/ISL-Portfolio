@@ -1,0 +1,68 @@
+/* Small Reset */
+
+body, h1, h2, p, ol, ul{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+/* Balises Génériques */
+
+body {
+	font-size: 16px;
+}
+
+/* Menu */
+.l-main-nav{
+	display: none;
+}
+
+.l-main-nav a{
+	display: block;
+	padding: 1rem .5rem;
+	text-decoration: none;
+	color: black;
+}
+
+.l-main-nav.is-active{
+	display: block;
+}
+
+.l-hamburger-menu{
+	font-size: 2rem;
+	padding: 0 .5rem;
+}
+
+.l-hamburger-menu:hover{
+	animation: animationBurger 2sec infinite;
+}
+
+@keyframes animationBurger{
+	0% {
+		transform: translateX(0px);
+		}
+		25% {
+		transform: translateX(150px);
+		}
+		50% {
+		transform: translateX(150px) rotate(30deg);
+		}
+		75% {
+		transform: translateX(150px);
+	}
+}
+
+/* Media Queries Tablette
+@media screen and (min-width: 720px){
+	.l-main-nav li{
+		display: inline-block;
+	}
+	
+	.l-hamburger-menu{
+		display: none;
+	}
+}/*
